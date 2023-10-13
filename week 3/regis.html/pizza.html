@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>action</title>
+ 
+</head>
+<body>
+    <h1>mailing list sign up</h1>
+    <form action="http://blackgoosebistro.com/pizza.php" method="POST">
+        <fieldset>
+            <legend>join our email list</legend>
+            <p>get news about the band such as tour dates and special mp3
+                releases sent to your own in-box 
+            </p>
+            <ol>
+                <li><label for="firstlast">nama:</label>
+                <input type="text" name="customername" id="customername"></li>
+                <li><label for="firstlast">address:</label>
+                    <input type="text" name="address" id="address"></li>
+                <li><label for="email">email:</label>
+                <input type="text" name="email" id="email"></li>    
+                <li><label for="email">nomor telepon:</label>
+                    <input type="number" name="telephone" id="telephone"></li>   
+            </ol>
+            <form action="http://blackgoosebistro.com/pizza.php">
+                Delivery Intructions: <textarea name="instructions" maxlength="400" cols="40" rows="3" id="int"></textarea><br>
+            </form>
+            <p>crust [choose one]:</p>
+                <ol>
+                    <li><input type="radio" name="crust" value="classic white" checked>classic white</li>
+                    <li><input type="radio" name="crust" value="multigrain" checked>multigrain</li>
+                    <li><input type="radio" name="crust" value="cheese-stuffed" checked>cheese-stuffed curst</li>
+                    <li><input type="radio" name="crust" value="gluten-free" checked>gluten-free</li>
+                </ol>
+                <p>toppings choose as many as you want:</p>
+                <ol>
+                    <li><input type="checkbox" name="toppings[]" value="Red Sauce" checked>Red Sauce</li>
+                    <li><input type="checkbox" name="toppings[]" value="White Sauce" >White Sauce</li>
+                    <li><input type="checkbox" name="toppings[]" value="Mozzarela Cheese" >Mozzarela Cheese</li>
+                    <li><input type="checkbox" name="toppings[]" value="pepperoni" >Pepperoni</li>
+                    <li><input type="checkbox" name="toppings[]" value="mushrooms" >Mushrooms</li>
+                    <li><input type="checkbox" name="toppings[]" value="peppers" >Peppers</li>
+                    <li><input type="checkbox" name="toppings[]" value="anchovies" >Anchovies</li>  
+                </ol>
+                <p>Numbers</p><br>
+
+               <p>How Many Pizza</p><select name="pizzas" id="" size="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+               </select><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
